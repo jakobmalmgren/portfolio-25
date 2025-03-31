@@ -1,0 +1,116 @@
+.home {
+  display: flex;
+  height: 100%;
+  background-color: #262626;
+
+  width: 100%;
+}
+
+.home__info-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__info-section-wrapper {
+  width: 75%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 400px;
+}
+.home__info-section__p {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.home__btn-icons-wrapper {
+  /* display: flex;
+  align-items: center; */
+}
+.divider-text {
+  display: flex;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  color: white;
+}
+
+.divider {
+  width: 100px;
+  transform: rotate(90deg);
+}
+.home__icon-section {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  min-height: 450px;
+  right: 1rem;
+  width: 50px;
+  /* background-color: red; */
+}
+.home__icon-section__container {
+  /* filter: drop-shadow(3px 5px 2px rgba(255, 254, 254, 0.4)); */
+  width: 37px;
+  height: 37px;
+  /* border: 1.4px solid rgb(38 77 32); */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  border: 1px solid white;
+  cursor: pointer;
+  /* margin-left: 0.5rem; */
+  /* box-shadow: rgba(215, 215, 215, 0.15) 0px 5px 15px;
+  box-shadow: 0 0 10px #3a842d; */
+}
+
+.home__icon-section__container:hover {
+  /* box-shadow: 0 0 5px rgb(77, 39, 32);
+  text-shadow: 0 0 5px rgb(38 77 32); */
+  scale: 1.1;
+}
+.home-icon-wrapper {
+  /* background-color: red; */
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home__icon-section__icon {
+  font-size: 1.1rem;
+  /* color: rgb(38 77 32); */
+  color: #ffffff;
+}
+
+.home__info-section__header {
+  color: white;
+  font-size: 3.5rem;
+}
+.home__span {
+  color: rgb(38 77 32);
+  font-family: "Homemade Apple", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home__img-section {
+  width: 50%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+}
+.home__img {
+  height: 370px;
+  width: 370px;
+  border-radius: 50%;
+  /* background-blend-mode: screen; */
+  /* box-shadow: 0 0 25px grey; */
+  /* box-shadow: 0 0 25px #3a842d; */
+  box-shadow: 0 0 25px rgb(38 77 32);
+}
+/* // here */

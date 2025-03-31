@@ -1,0 +1,218 @@
+.contact {
+  height: 100%;
+  background-color: #262626;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+}
+
+/* .contact-container-header :nth-child(1) {
+  text-align: center;
+} */
+
+.contact-container-content {
+  scale: 0.9;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: bisque; */
+  /* position: relative; */
+  /* background-color: aqua; */
+}
+
+.contact-container-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 100%; */
+  /* background-color: blueviolet; */
+}
+.contact-container-icons {
+  /* width: 100%; */
+  /* max-width: 470px; */
+  /* margin: 0 auto; */
+  width: 40%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon-circle__icon {
+  color: white;
+  margin-right: 20px;
+}
+.icon-wrapper {
+  margin-bottom: 8px;
+  align-items: center;
+  display: flex;
+  /* color: black; */
+}
+/* .icon-wrapper__info-wrapper {
+  background-color: red;
+} */
+.icon-wrapper__text-upper {
+  color: #3a842d;
+}
+.icon-wrapper__text-below {
+  color: white;
+}
+iframe {
+  border-radius: 3%;
+}
+.icon-circle {
+  margin-bottom: 5px;
+  /* border: 1px solid #3a842d; */
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: white; */
+  background-color: white;
+  /* box-shadow: 0 0 10px #3a842d; */
+  border-radius: 10%;
+}
+.icon-wrapper__info-text {
+  color: white;
+}
+/* .input-field {
+  background-color: black;
+} */
+/* .form-wrapper {
+  display: flex;
+  flex-direction: column;
+} */
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: white;
+}
+.formLabel {
+  position: absolute;
+  color: #262626;
+  background-color: #262626;
+  color: white;
+  top: -10px;
+  left: 25px;
+}
+
+.form-wrapper textarea,
+.form-wrapper input {
+  padding: 15px 15px 15px 25px;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid black;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.form-btn {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0rem;
+  border: none;
+  /* border: 1px solid #3a842d;
+  background-color: black; */
+  color: #262626;
+  /* box-shadow: 0 0 10px #3a842d; */
+}
+.input-wrapper input,
+.input-wrapper textarea {
+  background-color: white;
+  outline: none;
+}
+
+#lname,
+#fname,
+#subject,
+#email {
+  border: 1px solid #3a842d;
+  background-color: #262626;
+  color: white;
+  /* transition: border 1s ease-in-out; /*  */
+  transition: ease-in-out 0.2s;
+}
+#lname:hover,
+#fname:hover,
+#subject:hover,
+#email:hover {
+  cursor: pointer;
+}
+#lname::placeholder,
+#fname::placeholder,
+#subject::placeholder,
+#email::placeholder {
+  color: white;
+}
+#lname:focus,
+#fname:focus,
+#subject:focus,
+#email:focus {
+  border: 1px solid white;
+  transition: ease-in-out 0.2s;
+}
+.contact-container-inputfields {
+  /* background-color: red; */
+  display: flex;
+  width: 40%;
+  align-items: center;
+  /* background-color: green; */
+  /* height: 100%; */
+}
+
+@media screen and (min-width: 500px) {
+  /* .location-wrapper {
+    display: flex;
+  } */
+  /* .icon-wrapper {
+    display: flex;
+  } */
+}
+
+/* @media screen and (min-width: 600px) {
+  .contact-container-header :nth-child(2) {
+    font-size: 38px;
+  }
+  .contact-container-header :nth-child(1) {
+    font-size: 21px;
+  }
+} */
+/* @media screen and (min-width: 900px) {
+  .contact-container-header :nth-child(2) {
+    font-size: 40px;
+  }
+  .contact-container-header :nth-child(1) {
+    font-size: 22px;
+  }
+} */
+
+/* @media screen and (min-width: 1000px) {
+  .contact-container-wrapper {
+    display: flex;
+  } */
+/* .contact-container-inputfields {
+    padding: 10px 0px 0px 20px;
+  } */
+/* .contact-container-icons {
+    width: 50%;
+  } */
+/* .contact-container-content {
+    width: 95%;
+    position: relative;
+  } */
+/* .contact-modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } */
+/* } */

@@ -1,0 +1,32 @@
+.resume {
+  background-color: blue;
+  background-color: #262626;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  align-items: center;
+}
+.resume__container {
+  background-color: #262626;
+  width: 80%;
+  height: 100%;
+}
+.resume__header {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Homemade Apple", serif;
+}
+.resume__objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center;
+  height: 100%; */
+}

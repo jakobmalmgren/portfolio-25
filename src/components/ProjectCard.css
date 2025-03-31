@@ -1,0 +1,158 @@
+.project-card {
+  width: 300px;
+  height: 440px;
+  /* background-color: grey; */
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+  box-shadow: 0px 3px 12px 7px rgba(255, 255, 255, 0.12);
+  -webkit-box-shadow: 0px 3px 17px 7px rgba(255, 255, 255, 0.12);
+  -moz-box-shadow: 0px 3px 17px 7px rgba(255, 255, 255, 0.12);
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.082);
+}
+.project-card__item-label-wrapper {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.project-card__label {
+  padding: 3px 6px;
+  margin: 0px 5px;
+  border: none;
+  font-family: ui-rounded;
+  border-radius: 6px;
+  background-color: #00ff0053;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+.project-card__label--back {
+  padding: 3px 6px;
+  margin: 0px 5px;
+  border: none;
+  font-family: ui-rounded;
+  border-radius: 6px;
+  background-color: #ffbf008f;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Zoomar kortet */
+  transition: transform 0.6s ease-in-out;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Ökar skuggan för att skapa djup */
+}
+
+.project-card:hover .project-card__img {
+  transition: transform 0.6s ease-in-out;
+  /* transform: scale(1.01); */
+}
+.project-card__title {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: ui-rounded;
+}
+.project-card__paragraph {
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: ui-rounded;
+}
+
+.project-card__innerdiv {
+  position: relative;
+  overflow: hidden;
+  /* background-color: red; */
+
+  /* background-image: url(/src/images/logoJM.png); */
+  height: 100%;
+}
+.project-card__img-section {
+  height: 50%;
+  /* background-color: green; */
+}
+.project-card__text-section {
+  padding: 5px;
+  height: 50%;
+  /* background-color: purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(38, 77, 32);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 13px;
+  color: white;
+}
+.project-card__text-top-wrapper {
+  /* background-color: pink; */
+  overflow: hidden;
+  height: 80%;
+}
+.project-card__lower-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 20%;
+  align-items: center;
+}
+.project-card__icons {
+  /* background-color: aqua; */
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.project-card__icon {
+  width: 20px;
+  margin: 3px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.project-card__icons svg {
+  margin: 0px 5px;
+  color: white;
+}
+
+.project-card__link-item {
+  margin: 0px 10px;
+  color: white;
+}
+.project-card__link-icons-wrapper {
+  display: flex;
+  /* background-color: yellow; */
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  align-items: center;
+}
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Detta gör att bilden täcker hela containern utan att förlora proportioner */
+  object-position: center;
+  transition: transform 0.6s ease-in-out;
+  /* border-radius: 10px; */
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project-card__link-icons {
+  height: 40px;
+  width: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* background-color: rgb(38, 77, 32); */
+  background-color: rgba(255, 255, 255, 0.726);
+}
+.project-card__link-icons:hover {
+  background-color: rgba(255, 255, 255, 0.879);
+}
