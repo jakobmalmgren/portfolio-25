@@ -1,0 +1,29 @@
+.slider-wrapper {
+  margin: 0 auto;
+  width: 80%;
+
+  height: 100%;
+}
+.slick-prev {
+  left: -44px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: white;
+  opacity: 1;
+  font-size: 40px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+.slick-dots {
+  position: relative;
+  bottom: 0px;
+}
+.slick-slide div {
+  display: flex;
+  justify-content: center;
+}
