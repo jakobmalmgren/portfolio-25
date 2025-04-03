@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-container-content">
-        {/* <div className="contact-container"> */}
         <div className="contact-container-wrapper">
           <div className="contact-container-icons">
             <div className="icon-wrapper">
@@ -29,7 +28,6 @@ const Contact = () => {
             </div>
             <br />
             <div className="location-wrapper">
-              {/* <div className="icon-wrapper"></div> */}
               <div className="icon-wrapper">
                 <PiMapPinSimpleAreaThin className="icon-circle__icon " />
 
@@ -47,11 +45,9 @@ const Contact = () => {
               }
               width="100%"
               height="290"
-              // allowfullscreen=""
               allowFullScreen=""
               loading="lazy"
               title="map"
-              // referrerpolicy="no-referrer-when-downgrade"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
@@ -126,19 +122,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* </div> */}
-        {/* den högra sidan ska ja kanske ha lika lång som vänsta... */}
       </div>
     </div>
   );
 };
 
 export default Contact;
-
-//styla klart about me
-// göra projects
-// knappar övrall boxshadow...ser finare ut då
-
-// hovra över skills så ser man va de e...
-
-// göra mobile, o hamburgar..

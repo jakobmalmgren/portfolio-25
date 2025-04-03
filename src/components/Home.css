@@ -41,16 +41,21 @@
 }
 .home__icon-section {
   display: flex;
-
+  /* background-color: red; */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   top: 5%;
   min-height: 450px;
-  right: 1rem;
+
   width: 50px;
   /* background-color: red; */
+  top: 50%; /* Placera toppen av elementet vid 50% av förälderns höjd */
+  /* Behåll elementet vid vänster sida */
+  right: 0; /* Det påverkar inte centreringen men kan vara användbart */
+  transform: translateY(-50%);
+  right: 1.5rem;
 }
 .home__icon-section__container {
   /* filter: drop-shadow(3px 5px 2px rgba(255, 254, 254, 0.4)); */
