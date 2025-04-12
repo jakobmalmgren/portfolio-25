@@ -24,6 +24,20 @@ const data = [
     techniques: [bootstrap, html, css],
   },
   {
+    title: "Yum-Yum-Gimme-Sum",
+    info: `Focusing on React, SASS, BEM and Redux toolkit
+    including store, slices and folderstructure.
+    I am also using React-router-dom and interacting with
+    an API using various of HTTP methods such as GET, POST etc.
+    The app is created with Vite.
+       `,
+    label: ["Front-End"],
+    image: "yum.png",
+    url: "https://github.com/jakobmalmgren/Individuell-examination-Yum-Yum-Gimme-Sum",
+    live: "",
+    techniques: [react, sass, html, css, redux],
+  },
+  {
     title: "Chatservice",
     label: ["Back-End", "Front-End"],
     info: `Focusing on React, fetching data from an API with async/await,

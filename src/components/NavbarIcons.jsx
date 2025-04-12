@@ -29,10 +29,14 @@ const NavbarIcons = () => {
           componentsProps={{
             tooltip: {
               sx: {
-                bgcolor: "common.black",
-                "& .MuiTooltip-arrow": {
-                  color: "common.black",
-                },
+                bgcolor: "common.black", // Bakgrundsfärg
+                color: "white", // Textfärg
+                fontFamily: '"Delius Swash Caps", cursive', // Typsnitt
+              },
+            },
+            arrow: {
+              sx: {
+                color: "common.black", // Pilarna matchar bakgrunden
               },
             },
           }}
@@ -53,10 +57,14 @@ const NavbarIcons = () => {
           componentsProps={{
             tooltip: {
               sx: {
-                bgcolor: "common.black",
-                "& .MuiTooltip-arrow": {
-                  color: "common.black",
-                },
+                bgcolor: "common.black", // Bakgrundsfärg
+                color: "white", // Textfärg
+                fontFamily: '"Delius Swash Caps", cursive', // Typsnitt
+              },
+            },
+            arrow: {
+              sx: {
+                color: "common.black", // Pilarna matchar bakgrunden
               },
             },
           }}
@@ -77,33 +85,14 @@ const NavbarIcons = () => {
           componentsProps={{
             tooltip: {
               sx: {
-                bgcolor: "common.black",
-                "& .MuiTooltip-arrow": {
-                  color: "common.black",
-                },
+                bgcolor: "common.black", // Bakgrundsfärg
+                color: "white", // Textfärg
+                fontFamily: '"Delius Swash Caps", cursive', // Typsnitt
               },
             },
-          }}
-          title="Resume"
-          arrow
-          slots={{
-            transition: Zoom,
-          }}
-        >
-          <li>
-            <NavLink style={NavlinkStyles} to="/resume">
-              <FaBriefcase />
-            </NavLink>
-          </li>
-        </Tooltip>
-        <Tooltip
-          componentsProps={{
-            tooltip: {
+            arrow: {
               sx: {
-                bgcolor: "common.black",
-                "& .MuiTooltip-arrow": {
-                  color: "common.black",
-                },
+                color: "common.black", // Pilarna matchar bakgrunden
               },
             },
           }}
@@ -123,10 +112,14 @@ const NavbarIcons = () => {
           componentsProps={{
             tooltip: {
               sx: {
-                bgcolor: "common.black",
-                "& .MuiTooltip-arrow": {
-                  color: "common.black",
-                },
+                bgcolor: "common.black", // Bakgrundsfärg
+                color: "white", // Textfärg
+                fontFamily: '"Delius Swash Caps", cursive', // Typsnitt
+              },
+            },
+            arrow: {
+              sx: {
+                color: "common.black", // Pilarna matchar bakgrunden
               },
             },
           }}

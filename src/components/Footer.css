@@ -1,9 +1,10 @@
 .footer {
   height: 8%;
   color: rgb(38 77 32);
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0 0 25px #3a842d; */
+}
+.footer__text {
+  font-family: "Delius Swash Caps", cursive;
 }

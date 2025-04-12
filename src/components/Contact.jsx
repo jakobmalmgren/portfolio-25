@@ -1,10 +1,34 @@
 import "./Contact.css";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { CiMail } from "react-icons/ci";
 import { GiRotaryPhone } from "react-icons/gi";
 import { PiMapPinSimpleAreaThin } from "react-icons/pi";
 import { BsPerson, BsPersonPlus, BsPencil } from "react-icons/bs";
 
 const Contact = () => {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_czj3w5i", "template_gl5786t", form.current, {
+        publicKey: "GDa6llSeIaoU6KPtP",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setSent(true);
+          setTimeout(() => setSent(false), 3000);
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="contact">
       <div className="contact-container-content">
@@ -52,7 +76,7 @@ const Contact = () => {
             ></iframe>
           </div>
           <div className="contact-container-inputfields">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-wrapper">
                 <div className="input-wrapper">
                   <label htmlFor="fname" className="formLabel">
@@ -115,6 +139,13 @@ const Contact = () => {
                   <BsPencil className="input-icon" />
                 </div>
               </div>
+              {sent ? (
+                <p className="success-message">
+                  Tack! Ditt meddelande har skickats.
+                </p>
+              ) : (
+                <p className="visible">Tack! Ditt meddelande har skickats.</p>
+              )}
 
               <button className="form-btn" type="submit" value="Submit">
                 SEND

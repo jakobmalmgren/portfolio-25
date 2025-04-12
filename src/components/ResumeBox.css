@@ -1,22 +1,16 @@
 .resume-box {
-  background-color: grey;
   background-color: white;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 180px;
-  height: 50px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   padding: 3px;
-  /* scale: 0.8; */
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
-.resume-box__innerdiv {
-  background-color: #262626;
-  border-radius: 10px;
-  height: 100%;
-  display: flex;
-  padding: 6px;
-}
 .resume-box__img {
   height: 60%;
 
@@ -24,25 +18,13 @@
 }
 
 .resume-box__icon-wrapper {
-  /* background-color: rgb(38, 77, 32); */
   background-color: white;
   height: 100%;
-  border-radius: 10px;
-  min-width: 45px;
-  max-width: 45px;
+  /* border-radius: 10px; */
+  border-radius: 50%;
+  min-width: 40px;
+  max-width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.resume-box__about {
-  padding: 3px 6px;
-}
-.resume-box__skillName {
-  font-size: 13px;
-  font-weight: bold;
-  color: white;
-}
-.resume-box__area {
-  font-size: 10px;
-  color: white;
 }

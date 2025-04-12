@@ -1,4 +1,4 @@
-import img from "../images/me.jpg";
+import img2 from "../images/jakob.jpg";
 import { LuGithub } from "react-icons/lu";
 import { RiLinkedinLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
@@ -57,7 +57,9 @@ const Home = () => {
       </section>
 
       <section className="home__img-section">
-        <img className="home__img" src={img} alt="profile-img" />
+        <section className="home__img-wrapper">
+          <img className="home__img" src={img2} alt="profile-img" />
+        </section>
       </section>
     </div>
   );
