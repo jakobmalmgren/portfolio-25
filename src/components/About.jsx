@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import img from "../images/jakobside.jpg";
 import ResumeBox from "./ResumeBox";
+import { PiBooksThin } from "react-icons/pi";
+
+const education = [
+  {
+    education: "The Front End Developer Bootcamp, Sundsgarden",
+    link: "/images/bootcamp.pdf",
+    time: "16th of August 2021 - 17th of Januari 2022",
+  },
+  {
+    education: "Advanced React, Scrimba",
+    link: "/images/advancedReact.pdf",
+    time: "10th of June 2022 - 16th of Januari 2023",
+  },
+  {
+    education: "The Front End Developer Career Path, Scrimba",
+    link: "../../public/images/frontenddeveloper.pdf",
+    time: "16th of June 2022 - 17th of Januari 2023",
+  },
+
+  {
+    education: "Javascript Fullstack Developer, YH Gothenburg",
+    time: "Ongoing...",
+  },
+];
+const skills = [
+  "API:s",
+  "Responsiveness",
+  "Classcomponents",
+  "Functioncomponents",
+  "Folder structure & Clean code",
+  "Visual Studios",
+  "Testing & Debugging",
+  "English - A level",
+  "Problemsolver",
+  " Good communicator",
+  "Teamplayer",
+  "Creative",
+  "BEM",
+  "HOC:s",
+  "Render Props",
+  "Async code",
+];
 
 const resumeSkill = [
   {
@@ -87,6 +129,8 @@ const resumeSkill = [
 ];
 
 const About = () => {
+  const [activeSection, setActiveSection] = useState("toolset");
+
   return (
     <section className="about">
       <div className="about__img-content">
@@ -112,15 +156,61 @@ const About = () => {
           </section>
           <section className="about__link-section">
             <div className="about__link-section-wrapper">
-              <div>Toolset</div>
-              <div>Skills</div>
-              <div>Education</div>
+              <div
+                className={activeSection === "toolset" ? "link active" : "link"}
+                onClick={() => setActiveSection("toolset")}
+              >
+                Toolset
+              </div>
+              <div
+                className={activeSection === "skills" ? "link active" : "link"}
+                onClick={() => setActiveSection("skills")}
+              >
+                Skills
+              </div>
+              <div
+                className={
+                  activeSection === "education" ? "link active" : "link"
+                }
+                onClick={() => setActiveSection("education")}
+              >
+                Education
+              </div>
             </div>
-            <div className="about__data-section">
-              {resumeSkill.map((item) => {
-                return <ResumeBox key={item.skillName} item={item} />;
-              })}
-            </div>
+
+            {activeSection === "toolset" && (
+              <div className="about__toolset-section">
+                {resumeSkill.map((item) => {
+                  return <ResumeBox key={item.skillName} item={item} />;
+                })}
+              </div>
+            )}
+            {activeSection === "skills" && (
+              <div className="about__skills-section">
+                {skills.map((item) => {
+                  return item;
+                })}
+              </div>
+            )}
+            {activeSection === "education" && (
+              <div className="about__education-section">
+                {education.map((item) => {
+                  return (
+                    <section className="about__education-wrapper">
+                      <div className="about__edu-section">
+                        <p className="about__edu-spec-education">
+                          <PiBooksThin /> ~ {item.education}
+                        </p>
+                        <p>{item.time}</p>
+                        <a href={item.link} target="blank">
+                          Visit me
+                        </a>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+            )}
           </section>
         </section>
       </section>

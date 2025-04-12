@@ -23,17 +23,24 @@
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: pink;
+  /* background-color: pink; */
+  /* overflow: hidden; */
+  /* overflow: auto; */
 }
 .about__text-content-wrapper {
-  background-color: grey;
+  /* background-color: grey; */
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* overflow: hidden;
+
+  overflow: auto; */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .about__text {
-  background-color: blue;
+  /* background-color: blue; */
   height: 60%;
 }
 .about__h {
@@ -62,18 +69,54 @@
   display: flex;
   justify-content: space-around;
   height: 20%;
-  background-color: green;
+  /* background-color: green; */
 }
 .about__link-section-wrapper div {
   color: white;
+
   font-family: "Delius Swash Caps", cursive;
 }
-.about__data-section {
+.about__toolset-section {
   /* border: 1px solid white; */
-  background-color: red;
+  /* background-color: red; */
   height: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 0.5fr));
   /* place-items: center; */
   /* gap: 5px; */
+}
+.about__skills-section {
+}
+.link.active {
+  color: rgb(38, 77, 32);
+}
+.link {
+  cursor: pointer;
+}
+.about__education-section {
+}
+.about__education-wrapper {
+  margin: 3px 0px;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.58);
+
+  /* background-color: rgb(156, 11, 35); */
+}
+.about__edu-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.about__edu-spec-education {
+  font-weight: bolder;
+}
+.about__edu-section p,
+.about__edu-section a {
+  font-size: 12px;
+  font-family: "Delius Swash Caps", cursive;
+  color: white;
 }
