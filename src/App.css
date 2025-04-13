@@ -14,3 +14,64 @@
   height: 77%;
   background-color: #262626;
 }
+
+.home__icon-section {
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  min-height: 450px;
+  width: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+}
+.divider-text {
+  display: flex;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  color: white;
+  font-size: 16px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.divider {
+  width: 100px;
+  transform: rotate(90deg);
+}
+.home-icon-wrapper {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home__icon-section__container {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home__icon-section__container:hover {
+  scale: 1.1;
+  background-color: white;
+
+  /* valfritt, gör fade-effekten tydligare */
+}
+
+.home__icon-section__icon {
+  font-size: 1.1rem;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+.home__icon-section__container:hover .home__icon-section__icon {
+  color: black; /* eller vad du vill ha som hoverfärg */
+}

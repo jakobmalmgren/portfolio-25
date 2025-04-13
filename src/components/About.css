@@ -87,16 +87,14 @@
   /* place-items: center; */
   /* gap: 5px; */
 }
-.about__skills-section {
-}
+
 .link.active {
   color: rgb(38, 77, 32);
 }
 .link {
   cursor: pointer;
 }
-.about__education-section {
-}
+
 .about__education-wrapper {
   margin: 3px 0px;
   border: 1px solid black;

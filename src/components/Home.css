@@ -2,7 +2,6 @@
   display: flex;
   height: 100%;
   background-color: #262626;
-
   width: 100%;
 }
 
@@ -23,80 +22,13 @@
 .home__info-section__p {
   color: white;
   letter-spacing: 0.2rem;
-}
-.home__btn-icons-wrapper {
-  /* display: flex;
-  align-items: center; */
-}
-.divider-text {
-  display: flex;
-  writing-mode: vertical-rl;
-  transform: rotate(360deg);
-  color: white;
   font-family: "Delius Swash Caps", cursive;
-}
-
-.divider {
-  width: 100px;
-  transform: rotate(90deg);
-}
-.home__icon-section {
-  display: flex;
-  /* background-color: red; */
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 5%;
-  min-height: 450px;
-
-  width: 50px;
-  /* background-color: red; */
-  top: 50%; /* Placera toppen av elementet vid 50% av förälderns höjd */
-  /* Behåll elementet vid vänster sida */
-  right: 0; /* Det påverkar inte centreringen men kan vara användbart */
-  transform: translateY(-50%);
-  right: 1.5rem;
-}
-.home__icon-section__container {
-  /* filter: drop-shadow(3px 5px 2px rgba(255, 254, 254, 0.4)); */
-  width: 37px;
-  height: 37px;
-  /* border: 1.4px solid rgb(38 77 32); */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: white; */
-  border: 1px solid white;
-  cursor: pointer;
-  /* margin-left: 0.5rem; */
-  /* box-shadow: rgba(215, 215, 215, 0.15) 0px 5px 15px;
-  box-shadow: 0 0 10px #3a842d; */
-}
-
-.home__icon-section__container:hover {
-  /* box-shadow: 0 0 5px rgb(77, 39, 32);
-  text-shadow: 0 0 5px rgb(38 77 32); */
-  scale: 1.1;
-}
-.home-icon-wrapper {
-  /* background-color: red; */
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.home__icon-section__icon {
-  font-size: 1.1rem;
-  /* color: rgb(38 77 32); */
-  color: #ffffff;
 }
 
 .home__info-section__header {
   color: white;
   font-size: 3.5rem;
+  font-family: "Delius Swash Caps", cursive;
 }
 .home__span {
   color: rgb(38 77 32);
@@ -106,7 +38,6 @@
 }
 .home__img-section {
   width: 50%;
-  /* background-color: blue; */
   display: flex;
   align-items: center;
 }
@@ -124,4 +55,3 @@
   height: 100%;
   object-fit: cover;
 }
-/* // here */

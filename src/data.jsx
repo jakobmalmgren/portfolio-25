@@ -28,8 +28,8 @@ const data = [
     info: `Focusing on React, SASS, BEM and Redux toolkit
     including store, slices and folderstructure.
     I am also using React-router-dom and interacting with
-    an API using various of HTTP methods such as GET, POST etc.
-    The app is created with Vite.
+    an API. This app is not focused on responsiveness, and works better on
+    mobile devices. The app is created with Vite.
        `,
     label: ["Front-End"],
     image: "yum.png",
@@ -81,6 +81,19 @@ const data = [
     url: "https://github.com/jakobmalmgren/react-project",
     live: "https://react-project-gules.vercel.app/",
     techniques: [css, html, sass, react, js],
+  },
+  {
+    title: "Portfolio",
+    info: `Focusing on React and some libraries to make
+    a portfolio. I have been using React router, EmailJS, Hamburger-React,
+    React-slick-carousel to make it functional.
+    The app is created with Vite. It is all responsive.
+       `,
+    label: ["Front-End"],
+    image: "portfolio.png",
+    url: "https://github.com/jakobmalmgren/portfolio-25",
+    live: "",
+    techniques: [react, css, html, js],
   },
 ];
 
