@@ -3,6 +3,7 @@ import "./About.css";
 import img from "../images/jakobside.jpg";
 import ResumeBox from "./ResumeBox";
 import { PiBooksThin } from "react-icons/pi";
+import { BsCheck2 } from "react-icons/bs";
 
 const education = [
   {
@@ -27,23 +28,29 @@ const education = [
   },
 ];
 const skills = [
-  "API:s",
-  "Responsiveness",
-  "Classcomponents",
-  "Functioncomponents",
-  "Folder structure & Clean code",
-  "Visual Studios",
-  "Testing & Debugging",
-  "English - A level",
+  "Communication & Collaboration",
+  "English - Native",
+  "Swedish - Native",
   "Problemsolver",
-  " Good communicator",
   "Teamplayer",
-  "Creative",
-  "BEM",
-  "HOC:s",
-  "Render Props",
-  "Async code",
+  "Creative thinker",
+  "Adaptable",
+  "Self-driven",
+  "Open to feedback",
+  "Curious and eager to learn",
+  "Structured and organized",
+  "Positive attitude",
+  "Sense of humor",
 ];
+
+// "Working with various CSS methods",
+// "Version control workflows (Git Flow)",
+// "Folder structure & Clean code",
+// "Async code",
+// "API:s",
+// "Responsive Web Design",
+// "UI/UX Thinking",
+// "Agile / Scrum",
 
 const resumeSkill = [
   {
@@ -166,7 +173,7 @@ const About = () => {
                 className={activeSection === "skills" ? "link active" : "link"}
                 onClick={() => setActiveSection("skills")}
               >
-                Skills
+                Softskills
               </div>
               <div
                 className={
@@ -188,7 +195,12 @@ const About = () => {
             {activeSection === "skills" && (
               <div className="about__skills-section">
                 {skills.map((item) => {
-                  return item;
+                  return (
+                    <div className="about__skills-wrapper">
+                      <BsCheck2 className="about__check" />
+                      <p> {item}</p>
+                    </div>
+                  );
                 })}
               </div>
             )}
@@ -199,11 +211,13 @@ const About = () => {
                     <section className="about__education-wrapper">
                       <div className="about__edu-section">
                         <p className="about__edu-spec-education">
-                          <PiBooksThin /> ~ {item.education}
+                          <PiBooksThin />
+                          &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                          {item.education}
                         </p>
                         <p>{item.time}</p>
                         <a href={item.link} target="blank">
-                          Visit me
+                          Cerfification
                         </a>
                       </div>
                     </section>

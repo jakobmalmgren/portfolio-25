@@ -38,6 +38,7 @@
   overflow: auto; */
   overflow-y: auto;
   overflow-x: hidden;
+  padding: 10px;
 }
 .about__text {
   /* background-color: blue; */
@@ -46,6 +47,7 @@
 .about__h {
   color: white;
   font-size: 27px;
+  font-family: "Delius Swash Caps", cursive;
 }
 .about__p {
   color: white;
@@ -100,7 +102,7 @@
   border: 1px solid black;
   display: flex;
   border-radius: 8px;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(128, 128, 128, 0.58);
 
   /* background-color: rgb(156, 11, 35); */
@@ -113,10 +115,24 @@
 }
 .about__edu-spec-education {
   font-weight: bolder;
+  display: flex;
+  align-items: center;
 }
 .about__edu-section p,
 .about__edu-section a {
   font-size: 12px;
   font-family: "Delius Swash Caps", cursive;
   color: white;
+}
+.about__skills-wrapper {
+  display: flex;
+  margin: 7px 0px;
+}
+.about__skills-wrapper p {
+  margin-left: 41px;
+  color: white;
+  font-family: "Delius Swash Caps", cursive;
+}
+.about__check {
+  color: rgb(38, 77, 32);
 }
