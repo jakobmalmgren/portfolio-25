@@ -33,7 +33,7 @@ const Carousel = () => {
         },
       },
       {
-        breakpoint: 550,
+        breakpoint: 750,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

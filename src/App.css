@@ -9,6 +9,7 @@
 .app-wrapper {
   height: 77%;
   background-color: #262626;
+  background-color: red;
 }
 
 .home__icon-section {
@@ -86,6 +87,10 @@
   flex: 1;
   height: auto;
   background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 
 .navbar {
@@ -97,7 +102,7 @@
   min-height: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .app {
     height: auto;
     min-height: 100vh;
@@ -110,8 +115,8 @@
   .app-wrapper {
     /* flex: none; */
     height: auto;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 }
