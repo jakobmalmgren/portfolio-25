@@ -5,11 +5,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.app {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
+
 .app-wrapper {
   height: 77%;
   background-color: #262626;
@@ -23,10 +19,11 @@
   align-items: center;
   position: absolute;
   min-height: 450px;
-  width: 50px;
+  width: 30px;
   top: 50%;
   transform: translateY(-50%);
   right: 0.5rem;
+  position: fixed;
 }
 .divider-text {
   display: flex;
@@ -74,4 +71,47 @@
 }
 .home__icon-section__container:hover .home__icon-section__icon {
   color: black; /* eller vad du vill ha som hoverfärg */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* overflow: hidden; */
+  height: auto;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  flex: 1;
+  height: auto;
+  background-color: #262626;
+}
+
+.navbar {
+  height: 15vh;
+  min-height: 60px;
+}
+.footer {
+  height: 8vh;
+  min-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .app-wrapper {
+    /* flex: none; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

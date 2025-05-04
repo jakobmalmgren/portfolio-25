@@ -1,5 +1,5 @@
 .footer {
-  height: 8%;
+  /* height: 8%; */
   color: rgb(38 77 32);
   display: flex;
   justify-content: center;
@@ -7,4 +7,16 @@
 }
 .footer__text {
   font-family: "Delius Swash Caps", cursive;
+}
+
+@media (max-width: 1040px) {
+  .footer__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__text {
+    font-size: 12px;
+  }
 }

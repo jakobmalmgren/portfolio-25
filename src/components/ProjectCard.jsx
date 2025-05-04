@@ -43,17 +43,21 @@ const ProjectCard = ({ item }) => {
           <section className="project-card__lower-wrapper">
             <section className="project-card__icons">
               {item.techniques.map((item) => {
-                return <img src={item} alt="" className="project-card__icon" />;
+                return (
+                  <div key={item}>
+                    <img src={item} alt="" className="project-card__icon" />
+                  </div>
+                );
               })}
             </section>
             <section className="project-card__link-icons-wrapper">
               <section className="project-card__link-icons">
-                <NavLink to={item.url}>
+                <NavLink to={item.url} target="_ blank">
                   <img src={github} alt="" style={{ height: "20px" }} />
                 </NavLink>
               </section>
               <section className="project-card__link-icons">
-                <NavLink to={item.live}>
+                <NavLink to={item.live} target="_ blank">
                   <img src={linked} alt="" style={{ height: "20px" }} />
                 </NavLink>
               </section>

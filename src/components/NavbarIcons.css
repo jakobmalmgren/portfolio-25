@@ -1,12 +1,16 @@
 .navbar {
-  width: 100vw;
-  height: 15%;
-  position: relative;
-  background-color: #262626;
+  /* width: 100vw; */
+  /* height: 15%; */
   /* background-color: red; */
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
 }
 
-ul {
+.navbar__ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,13 +20,13 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-ul li {
+.navbar__ul li {
   list-style: none;
   margin: 0 15px;
   position: relative;
 }
 
-ul li a {
+.navbar__ul li a {
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
   position: relative;
   display: block;
@@ -42,7 +46,7 @@ ul li a {
   /* border: 1px solid white; */
 }
 
-ul li a::before {
+.navbar__ul li a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -56,15 +60,13 @@ ul li a::before {
   z-index: -1;
 }
 
-ul li a:hover::before {
+.navbar__ul li a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgb(38 77 32);
 }
 
-ul li a:hover {
+.navbar__ul li a:hover {
   color: rgb(38 77 32);
-  /* box-shadow: 0 0 5px rgb(38 77 32);
-  text-shadow: 0 0 5px rgb(38 77 32); */
   scale: 1.1;
 }
 
@@ -79,4 +81,36 @@ ul li a:hover {
 }
 svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.hamburger-react {
+  margin: 0;
+  padding: 0;
+  display: none;
+  color: rgb(38 77 32);
+  z-index: 1000;
+  /* position: fixed; */
+}
+
+.navbar__icon {
+  border: 1.4px solid rgb(38 77 32);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media (max-width: 1040px) {
+  .navbar__icon {
+    display: none;
+  }
+
+  .hamburger-react {
+    display: block;
+  }
+  .navbar__ul {
+    display: none;
+  }
 }

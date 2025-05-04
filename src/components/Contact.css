@@ -19,6 +19,7 @@
   max-width: 1000px;
   margin: 0 auto;
   /* background-color: bisque; */
+
   /* position: relative; */
   /* background-color: aqua; */
 }
@@ -27,14 +28,13 @@
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* width: 100%; */
-  /* background-color: blueviolet; */
 }
 .contact-container-icons {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: red; */
 }
 .icon-circle__icon {
   color: white;
@@ -50,7 +50,7 @@
   background-color: red;
 } */
 .icon-wrapper__text-upper {
-  color: #3a842d;
+  /* color: #3a842d; */
   font-family: "Delius Swash Caps", cursive;
 }
 .icon-wrapper__text-below {
@@ -212,4 +212,31 @@ iframe {
 }
 #subject {
   padding: 15px 35px 15px 25px;
+}
+
+@media (max-width: 840px) {
+  .contact-container-wrapper {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container-inputfields {
+    /* background-color: red; */
+    display: flex;
+    width: 80%;
+    align-items: center;
+    /* background-color: green; */
+    /* height: 100%; */
+  }
+  .contact-container-icons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  form {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
