@@ -1,4 +1,6 @@
 import "./NavbarIcons.css";
+import { LuGithub } from "react-icons/lu";
+import { RiLinkedinLine } from "react-icons/ri";
 import Hamburger from "hamburger-react";
 import { IoIosMail } from "react-icons/io";
 import { useEffect } from "react";
@@ -150,6 +152,41 @@ const NavbarIcons = () => {
           </li>
         </Tooltip>
       </ul>
+
+      <section className="navbar-icons">
+        <div className="navbar-icons__label">Follow</div>
+
+        <img
+          className="navbar-icons__divider"
+          src="../../public/images/divider.svg"
+          alt=""
+        />
+
+        <div className="navbar-icons__wrapper">
+          <section className="navbar-icons__item">
+            <NavLink target="_blank" to="https://github.com/jakobmalmgren">
+              <LuGithub className="navbar-icons__icon" />
+            </NavLink>
+          </section>
+
+          <section className="navbar-icons__item">
+            <NavLink
+              target="_blank"
+              to="https://www.linkedin.com/in/jakob-malmgren-832062226/"
+            >
+              <RiLinkedinLine className="navbar-icons__icon" />
+            </NavLink>
+          </section>
+        </div>
+
+        <img
+          className="navbar-icons__divider"
+          src="../../public/images/divider.svg"
+          alt=""
+        />
+
+        <h1 className="navbar-icons__label">Me</h1>
+      </section>
     </nav>
   );
 };

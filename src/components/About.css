@@ -50,6 +50,7 @@
   height: 60%;
 }
 .about__h {
+  /* text-align: center; */
   color: white;
   font-size: 27px;
   font-family: "Delius Swash Caps", cursive;
@@ -103,13 +104,34 @@
 }
 
 .about__education-wrapper {
-  margin: 3px 0px;
-  border: 1px solid black;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-in-out;
   display: flex;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: rgba(128, 128, 128, 0.58);
+  gap: 20px;
+  align-items: flex-start;
 }
+
+.about__education-wrapper:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.about__edu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about__edu-spec-education svg {
+  color: #3a842d;
+  margin-right: 10px;
+}
+
 .about__edu-section {
   display: flex;
   flex-direction: column;
@@ -127,19 +149,51 @@
   font-family: "Delius Swash Caps", cursive;
   color: white;
 }
-.about__skills-wrapper {
+/* .about__skills-wrapper {
   display: flex;
   margin: 7px 0px;
-}
-.about__skills-wrapper p {
+} */
+/* .about__skills-wrapper p {
   margin-left: 41px;
   color: white;
   font-family: "Delius Swash Caps", cursive;
-}
-.about__check {
+} */
+/* .about__check {
   color: rgb(38, 77, 32);
+} */
+
+/* ///// */
+.about__skills-wrapper {
+  background-color: rgba(38, 77, 32, 0.15);
+  border: 1px solid rgba(38, 77, 32, 0.5);
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin: 7px 5px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
+.about__skills-wrapper:hover {
+  background-color: rgba(38, 77, 32, 0.3);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.about__skills-wrapper p {
+  color: white;
+  font-family: "Delius Swash Caps", cursive;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+/* .about__check {
+  color: rgb(38, 77, 32);
+  font-size: 1rem;
+} */
+a {
+  text-decoration: none;
+}
 @media (max-width: 868px) {
   .about {
     /* background-color: green;
@@ -150,17 +204,27 @@
   }
   .about__text-content {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .about__img-content {
     width: 100%;
+    margin-top: 20px;
   }
   .about__p {
     padding: 0px 10px;
+    text-align: center;
+  }
+
+  .about__h {
+    text-align: center;
   }
 }
 
 @media (max-width: 580px) {
+  .about__img-content {
+    width: 100%;
+    margin-top: 20px;
+  }
   .about__img-wrapper {
     height: 270px;
     width: 270px;

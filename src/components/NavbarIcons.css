@@ -70,15 +70,6 @@
   scale: 1.1;
 }
 
-.navbar__icon {
-  border: 1.4px solid rgb(38 77 32);
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-}
 svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
@@ -98,13 +89,96 @@ svg {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: 1rem;
+  z-index: 100;
+  top: 50%;
   left: 1rem;
+  transform: translateY(-50%);
+}
+
+/* // här */
+
+.navbar-icons {
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30px;
+  min-height: unset;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.navbar-icons__label {
+  color: white;
+  font-size: 16px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+.navbar-icons__item {
+  padding: 0 15px;
+}
+.navbar-icons__item {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-icons__item:hover {
+  scale: 1.1;
+  background-color: white;
+}
+.navbar-icons__icon {
+  font-size: 1.1rem;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-icons__item:hover .navbar-icons__icon {
+  color: black;
+}
+
+.navbar-icons__wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-icons__divider {
+  width: 100px;
+  transform: rotate(180deg);
+}
+
+.navbar-icons__label {
+  writing-mode: inherit;
 }
 
 @media (max-width: 1040px) {
   .navbar__icon {
-    display: none;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 100;
+    top: 50%;
+    left: 2rem;
+
+    transform: translateX(-50%);
+  }
+  .navbar-icons {
+    display: flex;
   }
 
   .hamburger-react {
@@ -114,6 +188,41 @@ svg {
     display: none;
   }
   .navbar {
-    height: 0vh;
+    /* height: 0vh; */
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-icons {
+    transform: translate(-50%, -50%) scale(0.8);
+    /* scale: 0.8;
+
+    transform-origin: left center; */
+  }
+}
+@media (max-width: 600px) {
+  .navbar-icons {
+    transform: translate(-50%, -50%) scale(0.7);
+    /* scale: 0.6;
+
+    transform-origin: left center; */
+  }
+}
+@media (max-width: 600px) {
+  .navbar-icons {
+    transform: translate(-50%, -50%) scale(0.6);
+    /* scale: 0.4;
+    
+
+    transform-origin: left center; */
+  }
+}
+@media (max-width: 470px) {
+  .navbar-icons {
+    transform: translate(-50%, -50%) scale(0.4);
+    /* scale: 0.4;
+    
+
+    transform-origin: left center; */
   }
 }

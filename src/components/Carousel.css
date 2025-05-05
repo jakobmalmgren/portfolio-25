@@ -21,7 +21,7 @@
   color: white;
 }
 .slick-dots {
-  position: relative;
+  position: absolute;
   bottom: 0px;
 }
 .slick-slide div {

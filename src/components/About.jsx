@@ -152,7 +152,7 @@ const About = () => {
             <h1 className="about__h">About Me</h1>
             <p className="about__p">
               Hi! I'm someone who genuinely enjoys learning and exploring new
-              things — especially when it comes to coding. I love building
+              things, especially when it comes to coding. I love building
               projects, solving problems, and constantly growing as a developer.
               At the same time, I’m super passionate about sports and traveling.
               Whether I’m exploring new cities or watching a big game, I find a
@@ -197,7 +197,7 @@ const About = () => {
                 {skills.map((item) => {
                   return (
                     <div className="about__skills-wrapper">
-                      <BsCheck2 className="about__check" />
+                      {/* <BsCheck2 className="about__check" /> */}
                       <p> {item}</p>
                     </div>
                   );
@@ -208,19 +208,21 @@ const About = () => {
               <div className="about__education-section">
                 {education.map((item) => {
                   return (
-                    <section className="about__education-wrapper">
-                      <div className="about__edu-section">
-                        <p className="about__edu-spec-education">
-                          <PiBooksThin />
-                          &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
-                          {item.education}
-                        </p>
-                        <p>{item.time}</p>
-                        <a href={item.link} target="blank">
-                          Cerfification
-                        </a>
-                      </div>
-                    </section>
+                    <a href={item.link} target="blank">
+                      <section className="about__education-wrapper">
+                        <div className="about__edu-section">
+                          <p className="about__edu-spec-education">
+                            <PiBooksThin />
+                            &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                            {item.education}
+                          </p>
+                          <p>{item.time}</p>
+                          <a href={item.link} target="blank">
+                            Cerfification
+                          </a>
+                        </div>
+                      </section>
+                    </a>
                   );
                 })}
               </div>

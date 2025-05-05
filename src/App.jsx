@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </div>
       <Footer></Footer>
-      {/* <section className="home__icon-section">
+      <section className="home__icon-section">
         <div className="divider-text">Follow</div>
         <img className="divider" src="../../public/images/divider.svg" alt="" />
         <div className="home-icon-wrapper">
@@ -45,7 +45,7 @@ function App() {
 
         <img className="divider" src="../../public/images/divider.svg" alt="" />
         <h1 className="divider-text">Me</h1>
-      </section> */}
+      </section>
     </div>
   );
 }
