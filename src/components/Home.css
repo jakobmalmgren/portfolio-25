@@ -72,11 +72,6 @@
 
 @media (max-width: 850px) {
   .home__span {
-    font-size: 30px;
-  }
-}
-@media (max-width: 750px) {
-  .home__span {
     font-size: 27px;
   }
   .home {

@@ -1,5 +1,6 @@
 import "./HamburgerNavbar.css";
-
+import { LuGithub } from "react-icons/lu";
+import { RiLinkedinLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 const HamburgerNavbar = () => {
   return (
@@ -26,6 +27,44 @@ const HamburgerNavbar = () => {
           </NavLink>
         </li>
       </ul>
+
+      <section className="hamburger-navbar__icons">
+        <div className="hamburger-navbar__label">Follow</div>
+        <img
+          className="hamburger-navbar__divider"
+          src="../../public/images/dividerChanged.svg"
+          alt=""
+        />
+
+        <div className="hamburger-navbar__icons-wrapper">
+          <div className="hamburger-navbar__icon-item">
+            <NavLink
+              target="_blank"
+              to="https://github.com/jakobmalmgren"
+              className="hamburger-navbar__icon-link"
+            >
+              <LuGithub className="hamburger-navbar__icon" />
+            </NavLink>
+          </div>
+
+          <div className="hamburger-navbar__icon-item">
+            <NavLink
+              target="_blank"
+              to="https://www.linkedin.com/in/jakob-malmgren-832062226/"
+              className="hamburger-navbar__icon-link"
+            >
+              <RiLinkedinLine className="hamburger-navbar__icon" />
+            </NavLink>
+          </div>
+        </div>
+
+        <img
+          className="hamburger-navbar__divider"
+          src="../../public/images/dividerChanged.svg"
+          alt=""
+        />
+        <h1 className="hamburger-navbar__label">Me</h1>
+      </section>
     </nav>
   );
 };

@@ -70,7 +70,6 @@
   object-fit: cover;
 }
 .about__link-section {
-  /* background-color: red; */
   height: 40%;
   margin-top: 20px;
 }
@@ -193,6 +192,9 @@
 } */
 a {
   text-decoration: none;
+}
+.about__skills-section {
+  margin-top: 20px;
 }
 @media (max-width: 868px) {
   .about {

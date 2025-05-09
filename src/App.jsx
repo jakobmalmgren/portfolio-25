@@ -29,7 +29,7 @@ function App() {
         <img className="divider" src="../../public/images/divider.svg" alt="" />
         <div className="home-icon-wrapper">
           <section className="home__icon-section__container">
-            <NavLink target="_ blank" to="https://github.com/jakobmalmgren">
+            <NavLink target="_blank" to="https://github.com/jakobmalmgren">
               <LuGithub className="home__icon-section__icon" />
             </NavLink>
           </section>

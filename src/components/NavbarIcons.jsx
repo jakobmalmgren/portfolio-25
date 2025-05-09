@@ -153,7 +153,7 @@ const NavbarIcons = () => {
         </Tooltip>
       </ul>
 
-      <section className="navbar-icons">
+      {/* <section className="navbar-icons">
         <div className="navbar-icons__label">Follow</div>
 
         <img
@@ -186,7 +186,7 @@ const NavbarIcons = () => {
         />
 
         <h1 className="navbar-icons__label">Me</h1>
-      </section>
+      </section> */}
     </nav>
   );
 };
