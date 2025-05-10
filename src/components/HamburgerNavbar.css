@@ -1,4 +1,4 @@
-.hamburger-navbar {
+/* .hamburger-navbar {
   height: 100%;
   width: 50%;
   min-width: 270px;
@@ -8,7 +8,7 @@
   z-index: 900;
   transition: left 0.3s ease-in-out;
   position: fixed;
-}
+} */
 
 .hamburger-navbar::before {
   content: "";
@@ -22,6 +22,7 @@
   border-bottom-right-radius: 5%;
   border-top-right-radius: 5%;
   filter: brightness(130%) saturate(20%) contrast(80%);
+  border-right: 1px solid #262626;
 }
 
 .hamburger-navbar__ul {
@@ -60,6 +61,8 @@
   right: 1rem;
   /* background-color: red; */
   position: absolute;
+  scale: 0.8;
+  transform-origin: top;
 }
 
 .hamburger-navbar__label {
@@ -113,8 +116,30 @@
 }
 
 /* === App Layout === */
+.hamburger-navbar {
+  position: fixed;
+  top: 0;
+  left: -500px; /* Göm menyn utanför skärmen först */
+  height: 100%;
+  width: 50%;
+  min-width: 270px;
+  max-width: 340px;
+  z-index: 900;
+  transition: left 0.3s ease-in-out; /* Smooth slide */
+}
+
+/* När menyn är öppen – flytta in den på skärmen */
+.hamburger-navbar.open {
+  left: 0;
+}
 
 /* // */
+
+.hamburger-navbar__hamburger-react {
+  position: absolute;
+  top: 25px;
+  right: 7px;
+}
 
 @media (min-width: 1040px) {
   .hamburger-navbar {

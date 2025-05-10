@@ -79,7 +79,7 @@ svg {
   padding: 0;
   display: none;
   color: rgb(38 77 32);
-  z-index: 1000;
+  /* z-index: 1000; */
   /* position: fixed; */
 }
 
@@ -186,9 +186,6 @@ svg {
   }
   .navbar__ul {
     display: none;
-  }
-  .navbar {
-    /* height: 0vh; */
   }
 }
 

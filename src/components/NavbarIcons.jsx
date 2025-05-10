@@ -38,7 +38,8 @@ const NavbarIcons = () => {
       <NavLink to="/">
         <img src={logoNavbar} alt="" className="navbar__icon" />
       </NavLink>
-      {isOpen && <HamburgerNavbar />}
+
+      <HamburgerNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <ul className="navbar__ul">
         <Tooltip
@@ -152,41 +153,6 @@ const NavbarIcons = () => {
           </li>
         </Tooltip>
       </ul>
-
-      {/* <section className="navbar-icons">
-        <div className="navbar-icons__label">Follow</div>
-
-        <img
-          className="navbar-icons__divider"
-          src="../../public/images/divider.svg"
-          alt=""
-        />
-
-        <div className="navbar-icons__wrapper">
-          <section className="navbar-icons__item">
-            <NavLink target="_blank" to="https://github.com/jakobmalmgren">
-              <LuGithub className="navbar-icons__icon" />
-            </NavLink>
-          </section>
-
-          <section className="navbar-icons__item">
-            <NavLink
-              target="_blank"
-              to="https://www.linkedin.com/in/jakob-malmgren-832062226/"
-            >
-              <RiLinkedinLine className="navbar-icons__icon" />
-            </NavLink>
-          </section>
-        </div>
-
-        <img
-          className="navbar-icons__divider"
-          src="../../public/images/divider.svg"
-          alt=""
-        />
-
-        <h1 className="navbar-icons__label">Me</h1>
-      </section> */}
     </nav>
   );
 };
