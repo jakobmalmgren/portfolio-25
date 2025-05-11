@@ -17,6 +17,7 @@
   background-image: url(../images/bakgrund.avif);
   background-size: cover;
   background-repeat: repeat;
+
   /* filter: grayscale(100%); */
   z-index: -1;
   border-bottom-right-radius: 5%;
@@ -46,6 +47,7 @@
   color: white;
   color: rgb(38 77 32);
   font-family: "Delius Swash Caps", cursive;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger-navbar__icons {
@@ -128,12 +130,16 @@
   transition: left 0.3s ease-in-out; /* Smooth slide */
 }
 
-/* När menyn är öppen – flytta in den på skärmen */
 .hamburger-navbar.open {
   left: 0;
 }
 
-/* // */
+.hamburger-navbar_link:hover {
+  letter-spacing: 0.3rem;
+  color: rgb(20, 40, 15);
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 5px rgb(38, 77, 32);
+}
 
 .hamburger-navbar__hamburger-react {
   position: absolute;

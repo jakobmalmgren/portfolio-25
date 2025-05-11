@@ -157,8 +157,8 @@ const About = () => {
               At the same time, I’m super passionate about sports and traveling.
               Whether I’m exploring new cities or watching a big game, I find a
               lot of inspiration in movement, energy, and new experiences. For
-              me, tech and adventure go hand in hand — I love the balance
-              between creating with code and living life to the fullest.
+              me, tech and adventure go hand in hand. I love the balance between
+              creating with code and living life to the fullest.
             </p>
           </section>
           <section className="about__link-section">

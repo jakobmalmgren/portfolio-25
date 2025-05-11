@@ -19,6 +19,19 @@
   background-repeat: repeat;
   filter: brightness(130%) saturate(20%) contrast(80%);
 }
+/* .footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(
+    38,
+    77,
+    32,
+    0.3
+  ); 
+  mix-blend-mode: multiply;
+  z-index: -1;
+} */
 .footer__text {
   font-family: "Delius Swash Caps", cursive;
 }

@@ -9,6 +9,10 @@ import sass from "../public/images/sass.png";
 import redux from "../public/images/redux.svg";
 import ts from "../public/images/typescript.png";
 import tailwind from "../public/images/tailwind.png";
+import nodeJs from "../public/images/Node.js.svg";
+import swagger from "../public/images/Swagger.svg";
+import express from "../public/images/Express.svg";
+import postman from "../public/images/postman-icon-svgrepo-com (1).svg";
 
 const data = [
   {
@@ -34,7 +38,7 @@ const data = [
     label: ["Front-End"],
     image: "yum.png",
     url: "https://github.com/jakobmalmgren/Individuell-examination-Yum-Yum-Gimme-Sum",
-    live: "",
+    live: "https://yum-yum-gimme-sum-project-hz0txztxp-jakobmalmgrens-projects.vercel.app/",
     techniques: [react, sass, html, css, redux],
   },
   {
@@ -94,6 +98,19 @@ const data = [
     url: "https://github.com/jakobmalmgren/portfolio-25",
     live: "",
     techniques: [react, css, html, js],
+  },
+  {
+    title: "Swing-notes-API",
+    label: ["Back-End"],
+    info: `Focusing on creating an API and connecting it to NEDB.
+    This project is not a visible one, you will need Postman for it.
+    This project is focusing on MVC(without view) structure,
+    creating a Swagger, Postman, Bcrypt, Jsonwebtoken, Middlewares, NodeJS, Express & Joi.
+    `,
+    image: "swingnotes.png",
+    url: "https://github.com/jakobmalmgren/individuell-examination-Swing-notes-API",
+    live: "https://github.com/jakobmalmgren/individuell-examination-Swing-notes-API",
+    techniques: [js, postman, express, nodeJs, swagger],
   },
 ];
 
