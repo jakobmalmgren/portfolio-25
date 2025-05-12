@@ -1,9 +1,7 @@
-import firebase from "../public/images/firebase.svg";
 import css from "../public/images/css-3.png";
 import html from "../public/images/html.png";
 import bootstrap from "../public/images/bootstrap.svg";
 import react from "../public/images/atom.png";
-import axios from "../public/images/axios.svg";
 import js from "../public/images/java-script.png";
 import sass from "../public/images/sass.png";
 import redux from "../public/images/redux.svg";
@@ -41,18 +39,6 @@ const data = [
     live: "https://yum-yum-gimme-sum-project-hz0txztxp-jakobmalmgrens-projects.vercel.app/",
     techniques: [react, sass, html, css, redux],
   },
-  {
-    title: "Chatservice",
-    label: ["Back-End", "Front-End"],
-    info: `Focusing on React, fetching data from an API with async/await,
-      Axios, Context API, Firebase to create an authentification and the concept of styled components. I also used React hooks such as usestate, usecontext and useffect.
-      It is all responsive.`,
-    image: "chat.jpg",
-    url: "https://github.com/jakobmalmgren/chatproject",
-    live: "https://chatproject-fawn.vercel.app/",
-    techniques: [html, css, react, axios, firebase, js],
-  },
-
   {
     title: "Photography Webpage",
     label: ["Front-End"],
@@ -102,10 +88,9 @@ const data = [
   {
     title: "Swing-notes-API",
     label: ["Back-End"],
-    info: `Focusing on creating an API and connecting it to NEDB.
-    This project is not a visible one, you will need Postman for it.
-    This project is focusing on MVC(without view) structure,
-    creating a Swagger, Postman, Bcrypt, Jsonwebtoken, Middlewares, NodeJS, Express & Joi.
+    info: `In this app I am focusing on creating an API and connecting it to NEDB(noSQL),
+    MVC(without view) structure, creating a Swagger, Postman, Bcrypt, Jsonwebtoken, Middlewares, NodeJS, Express & Joi.
+    This project is not any Front-end included so you will need Postman for it.
     `,
     image: "swingnotes.png",
     url: "https://github.com/jakobmalmgren/individuell-examination-Swing-notes-API",

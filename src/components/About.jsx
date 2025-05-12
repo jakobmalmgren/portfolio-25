@@ -3,7 +3,6 @@ import "./About.css";
 import img from "../images/jakobside.jpg";
 import ResumeBox from "./ResumeBox";
 import { PiBooksThin } from "react-icons/pi";
-import { BsCheck2 } from "react-icons/bs";
 
 const education = [
   {
@@ -42,15 +41,6 @@ const skills = [
   "Positive attitude",
   "Sense of humor",
 ];
-
-// "Working with various CSS methods",
-// "Version control workflows (Git Flow)",
-// "Folder structure & Clean code",
-// "Async code",
-// "API:s",
-// "Responsive Web Design",
-// "UI/UX Thinking",
-// "Agile / Scrum",
 
 const resumeSkill = [
   {
@@ -197,7 +187,6 @@ const About = () => {
                 {skills.map((item) => {
                   return (
                     <div className="about__skills-wrapper">
-                      {/* <BsCheck2 className="about__check" /> */}
                       <p> {item}</p>
                     </div>
                   );
