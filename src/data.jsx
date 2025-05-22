@@ -82,7 +82,7 @@ const data = [
     label: ["Front-End"],
     image: "portfolio.png",
     url: "https://github.com/jakobmalmgren/portfolio-25",
-    live: "",
+    live: "https://portfolio-25-7scsyny94-jakobmalmgrens-projects.vercel.app/",
     techniques: [react, css, html, js],
   },
   {

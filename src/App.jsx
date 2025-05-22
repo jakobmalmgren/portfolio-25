@@ -26,7 +26,7 @@ function App() {
       <Footer></Footer>
       <section className="home__icon-section">
         <div className="divider-text">Follow</div>
-        <img className="divider" src="../../public/images/divider.svg" alt="" />
+        <img className="divider" src="/images/divider.svg" alt="" />
         <div className="home-icon-wrapper">
           <section className="home__icon-section__container">
             <NavLink target="_blank" to="https://github.com/jakobmalmgren">
@@ -43,7 +43,7 @@ function App() {
           </section>
         </div>
 
-        <img className="divider" src="../../public/images/divider.svg" alt="" />
+        <img className="divider" src="/images/divider.svg" alt="" />
         <h1 className="divider-text">Me</h1>
       </section>
     </div>

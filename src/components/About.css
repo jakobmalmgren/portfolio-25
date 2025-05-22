@@ -197,4 +197,10 @@ a {
     border-radius: 50%;
     box-shadow: 0 0 25px rgb(38 77 32);
   }
+  .about__edu-section p,
+  .about__edu-section a {
+    font-size: 10px;
+    font-family: "Delius Swash Caps", cursive;
+    color: white;
+  }
 }

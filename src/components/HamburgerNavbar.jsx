@@ -32,7 +32,7 @@ const HamburgerNavbar = ({ isOpen, setIsOpen }) => {
           <div className="hamburger-navbar__label">Follow</div>
           <img
             className="hamburger-navbar__divider"
-            src="../../public/images/dividerChanged.svg"
+            src="/images/dividerChanged.svg"
             alt=""
           />
 
@@ -60,7 +60,7 @@ const HamburgerNavbar = ({ isOpen, setIsOpen }) => {
 
           <img
             className="hamburger-navbar__divider"
-            src="../../public/images/dividerChanged.svg"
+            src="/images/dividerChanged.svg"
             alt=""
           />
           <h1 className="hamburger-navbar__label">Me</h1>

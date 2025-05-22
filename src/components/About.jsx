@@ -17,7 +17,7 @@ const education = [
   },
   {
     education: "The Front End Developer Career Path, Scrimba",
-    link: "../../public/images/frontenddeveloper.pdf",
+    link: "/images/frontenddeveloper.pdf",
     time: "16th of June 2022 - 17th of Januari 2023",
   },
 

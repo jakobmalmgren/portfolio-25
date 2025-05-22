@@ -1,6 +1,5 @@
 import "./NavbarIcons.css";
-import { LuGithub } from "react-icons/lu";
-import { RiLinkedinLine } from "react-icons/ri";
+
 import Hamburger from "hamburger-react";
 import { IoIosMail } from "react-icons/io";
 import { useEffect } from "react";
