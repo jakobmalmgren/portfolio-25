@@ -60,7 +60,7 @@ const ProjectCard = ({ item }) => {
                 <NavLink to={item.live} target="_ blank">
                   <img
                     className="viewLiveIcon"
-                    src="../../public/images/liveicon.svg"
+                    src="/public/images/liveicon.svg"
                     alt=""
                   />
                 </NavLink>
