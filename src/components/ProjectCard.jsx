@@ -3,8 +3,6 @@ import "./ProjectCard.css";
 import { NavLink } from "react-router-dom";
 import github from "../../public/images/GitHub.svg";
 
-// import view from "../../public/images/liveicon.svg";
-
 const ProjectCard = ({ item }) => {
   return (
     <div className="project-card">
@@ -60,7 +58,7 @@ const ProjectCard = ({ item }) => {
                 <NavLink to={item.live} target="_ blank">
                   <img
                     className="viewLiveIcon"
-                    src="/public/images/liveicon.svg"
+                    src="/images/liveicon.svg"
                     alt=""
                   />
                 </NavLink>
