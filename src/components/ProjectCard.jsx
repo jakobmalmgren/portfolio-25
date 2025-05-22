@@ -3,7 +3,7 @@ import "./ProjectCard.css";
 import { NavLink } from "react-router-dom";
 import github from "../../public/images/GitHub.svg";
 
-import linked from "../../public/images/chain.svg";
+// import view from "../../public/images/liveicon.svg";
 
 const ProjectCard = ({ item }) => {
   return (
@@ -58,7 +58,11 @@ const ProjectCard = ({ item }) => {
               </section>
               <section className="project-card__link-icons">
                 <NavLink to={item.live} target="_ blank">
-                  <img src={linked} alt="" style={{ height: "20px" }} />
+                  <img
+                    className="viewLiveIcon"
+                    src="../../public/images/liveicon.svg"
+                    alt=""
+                  />
                 </NavLink>
               </section>
             </section>
