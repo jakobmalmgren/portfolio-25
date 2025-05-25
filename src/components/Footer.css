@@ -14,10 +14,11 @@
   inset: 0;
   z-index: -1;
 
-  background-image: url(../images/bakgrund.avif);
-  background-size: cover;
+  /* background-image: url(../images/bakgrund.avif); */
+  /* background-size: cover;
   background-repeat: repeat;
-  filter: brightness(130%) saturate(20%) contrast(80%);
+  filter: brightness(130%) saturate(20%) contrast(80%); */
+  background-color: white;
 }
 /* .footer::after {
   content: "";

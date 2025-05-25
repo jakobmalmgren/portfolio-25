@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../images/bakgrund.avif);
+  /* background-image: url(../images/bakgrund.avif); */
   background-size: cover;
   background-repeat: repeat;
 
@@ -22,11 +22,13 @@
   z-index: -1;
   border-bottom-right-radius: 5%;
   border-top-right-radius: 5%;
-  filter: brightness(130%) saturate(20%) contrast(80%);
+  /* filter: brightness(130%) saturate(20%) contrast(80%); */
   border-right: 1px solid #262626;
 }
 
 .hamburger-navbar__ul {
+  border-bottom-right-radius: 5%;
+  border-top-right-radius: 5%;
   height: 100vh;
   list-style: none;
   padding: 0px;
@@ -34,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  background-color: white;
 }
 .hamburger-navbar__li {
   width: 100%;
