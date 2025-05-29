@@ -43,12 +43,14 @@
   color: white;
   font-size: 27px;
   font-family: "Delius Swash Caps", cursive;
+  padding: 0px 14px;
 }
 .about__p {
   color: white;
   font-size: 14px;
   margin-top: 10px;
   font-family: "Delius Swash Caps", cursive;
+  padding: 0px 14px;
 }
 .about__img {
   border-radius: 50%;
@@ -178,7 +180,7 @@ a {
   }
   .about__p {
     padding: 0px 10px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .about__h {
