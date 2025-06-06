@@ -11,7 +11,8 @@ import nodeJs from "../public/images/Node.js.svg";
 import swagger from "../public/images/Swagger.svg";
 import express from "../public/images/Express.svg";
 import postman from "../public/images/postman-icon-svgrepo-com (1).svg";
-
+import mongoDb from "../public/images/MongoDB.svg";
+import postgreSQL from "../public/images/postgresql.svg";
 const data = [
   {
     title: "Bootcamp Webpage",
@@ -26,7 +27,7 @@ const data = [
     techniques: [bootstrap, html, css],
   },
   {
-    title: "Yum-Yum-Gimme-Sum",
+    title: "Yum Yum Gimme Sum",
     info: `Focusing on React, SASS, BEM and Redux toolkit
     including store, slices and folderstructure.
     I am also using React-router-dom and interacting with
@@ -86,7 +87,7 @@ const data = [
     techniques: [react, css, html, js],
   },
   {
-    title: "Swing-notes-API",
+    title: "NOSQL Swing notes API",
     label: ["Back-End"],
     info: `In this app I am focusing on creating an API and connecting it to NEDB(noSQL),
     MVC(without view) structure, creating a Swagger, Postman, Bcrypt, Jsonwebtoken, Middlewares, NodeJS, Express & Joi.
@@ -96,6 +97,37 @@ const data = [
     url: "https://github.com/jakobmalmgren/individuell-examination-Swing-notes-API",
     live: "https://github.com/jakobmalmgren/individuell-examination-Swing-notes-API",
     techniques: [js, postman, express, nodeJs, swagger],
+  },
+  {
+    title: "NOSQL Review Platform",
+    label: ["Back-End"],
+    info: `In this project, I am focusing on the backend using Node.js, 
+    Express, and MongoDB. I use Mongoose for data modeling, bcrypt
+    for password hashing, JWT for authentication, middleware for route protection,
+    and features like select, populate, and aggregation pipelines to combine and process
+    related data. Role-based access is implemented for users and admins.
+    This project is not any Front-end included so you will need Postman for it to test it.
+    See README.md for more info and how to test everything.
+    `,
+    image: "review.jpg",
+    url: "https://github.com/jakobmalmgren/examination-NOSQL-Mongodb-Filmrecensionsplattform",
+    live: "https://github.com/jakobmalmgren/examination-NOSQL-Mongodb-Filmrecensionsplattform",
+    techniques: [js, postman, express, nodeJs, mongoDb],
+  },
+  {
+    title: "SQL Bulletin Board API",
+    label: ["Back-End"],
+    info: `The project builds an API using Node.js and Express, 
+    connected to PostgreSQL. The database is designed with an ER
+     diagram in dbdiagram.io. SQL JOINs are used to link data. 
+     The API follows an MVC architecture and is tested with Postman to 
+     ensure functionality and data integrity. This project is not any Front-end included so you will need Postman 
+     for it to test it. See README.md for more info and how to test everything.
+    `,
+    image: "bulleting.webp",
+    url: "https://github.com/jakobmalmgren/SQL-bulletin-exam",
+    live: "https://github.com/jakobmalmgren/SQL-bulletin-exam",
+    techniques: [js, postman, express, nodeJs, postgreSQL],
   },
 ];
 
