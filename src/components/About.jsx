@@ -94,6 +94,12 @@ const resumeSkill = [
   {
     image: "/images/postgresql.svg",
   },
+  {
+    image: "/images/aws.svg",
+  },
+  {
+    image: "/images/pipleline.webp",
+  },
 ];
 
 const About = () => {
