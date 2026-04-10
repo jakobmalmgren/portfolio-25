@@ -100,6 +100,15 @@ const resumeSkill = [
   {
     image: "/images/pipleline.webp",
   },
+  {
+    image: "/images/mui-logo.png",
+  },
+  {
+    image: "/images/vitestLogo.png",
+  },
+  {
+    image: "/images/jest.svg",
+  },
 ];
 
 const About = () => {

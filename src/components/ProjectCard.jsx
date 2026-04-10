@@ -13,9 +13,11 @@ const ProjectCard = ({ item }) => {
               <button
                 key={index}
                 className={
-                  label.includes("Back-End")
+                  label.toLowerCase().includes("back-end")
                     ? "project-card__label--back"
-                    : "project-card__label"
+                    : label.toLowerCase().includes("test")
+                      ? "project-card__label--test"
+                      : "project-card__label"
                 }
               >
                 {label}
@@ -54,15 +56,17 @@ const ProjectCard = ({ item }) => {
                   <img src={github} alt="" style={{ height: "20px" }} />
                 </NavLink>
               </section>
-              <section className="project-card__link-icons">
-                <NavLink to={item.live} target="_ blank">
-                  <img
-                    className="viewLiveIcon"
-                    src="/images/liveicon.svg"
-                    alt=""
-                  />
-                </NavLink>
-              </section>
+              {item.live && (
+                <section className="project-card__link-icons">
+                  <NavLink to={item.live} target="_blank">
+                    <img
+                      className="viewLiveIcon"
+                      src="/images/liveicon.svg"
+                      alt="Live preview"
+                    />
+                  </NavLink>
+                </section>
+              )}
             </section>
           </section>
         </section>

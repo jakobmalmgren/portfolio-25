@@ -24,28 +24,6 @@ function App() {
         </Routes>
       </div>
       <Footer></Footer>
-      <section className="home__icon-section">
-        <div className="divider-text">Follow</div>
-        <img className="divider" src="/images/divider.svg" alt="" />
-        <div className="home-icon-wrapper">
-          <section className="home__icon-section__container">
-            <NavLink target="_blank" to="https://github.com/jakobmalmgren">
-              <LuGithub className="home__icon-section__icon" />
-            </NavLink>
-          </section>
-          <section className="home__icon-section__container">
-            <NavLink
-              target="_ blank"
-              to="https://www.linkedin.com/in/jakob-malmgren-832062226/"
-            >
-              <RiLinkedinLine className="home__icon-section__icon" />
-            </NavLink>
-          </section>
-        </div>
-
-        <img className="divider" src="/images/divider.svg" alt="" />
-        <h1 className="divider-text">Me</h1>
-      </section>
     </div>
   );
 }

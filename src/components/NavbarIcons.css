@@ -76,8 +76,6 @@ svg {
   padding: 0;
   display: none;
   color: rgb(38 77 32);
-  /* z-index: 1000; */
-  /* position: fixed; */
 }
 
 .navbar__icon {
