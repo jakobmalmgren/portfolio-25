@@ -34,14 +34,6 @@ const Home = () => {
               <RiLinkedinLine className="home__icon-section__icon" />
             </NavLink>
 
-            {/* 📄 CV KNAPP */}
-            {/* <NavLink
-              target="_blank"
-              // to="https://app.flowcv.com/resume/content"
-              className="home__cv-btn"
-            >
-              View CV
-            </NavLink> */}
             <a
               href="/images/resume.pdf"
               target="_blank"

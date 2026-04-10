@@ -22,8 +22,9 @@ const data = [
     title: "Remember My Applications",
     label: ["Front-End", "Back-End"],
     info: `I developed a fullstack application as my thesis project. It is an app where you can save your applications, get reminders, view statistic
-    of your applications, view location of your applications and more. I have used React and MUI in the frontend.
-    For the backend with databases and API:s I have used serverless with AWS(DynamoDB, S3 buckets, API gateway, Lambda, Eventbridge)`,
+    of your applications, view location of your applications and more. I have used React and MUI in the frontend and for the hosting I worked with S3 in AWS.
+    For the backend with databases and API:s I have used serverless with AWS(DynamoDB, S3 buckets, API gateway, Lambda, Eventbridge)
+    I have also used Github actions for the CI/CD pipeline and branchprotections for safety when pushing to various branches`,
     image: "rma.png",
     url: "https://github.com/jakobmalmgren/examproj",
     live: "http://myappliesbucket.s3-website.eu-north-1.amazonaws.com/",
