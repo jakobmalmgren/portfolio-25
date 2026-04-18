@@ -35,7 +35,7 @@ const Home = () => {
             </NavLink>
 
             <a
-              href="/images/resume.pdf"
+              href="/images/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="home__cv-btn"
